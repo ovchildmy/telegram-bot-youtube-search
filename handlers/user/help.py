@@ -1,13 +1,8 @@
 from aiogram import types
+from loader import dp
 
-from utils.misc import rate_limit
 
-
-@rate_limit(5, 'help')
+@dp.message_handler(commands='help')
 async def bot_help(msg: types.Message):
-    text = [
-        'Список команд: ',
-        '/start - Начать диалог',
-        '/help - Получить справку'
-    ]
-    await msg.answer('\n'.join(text))
+    text = 'Я - бот для поиска видео с Youtube. Напиши, что хочешь посмотреть и я покажу самое подходящее видео!'
+    await msg.answer(text)
