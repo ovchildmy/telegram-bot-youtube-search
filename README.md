@@ -1,6 +1,17 @@
-# aiogram-bot-template
-Template for creating scalable bots with aiogram
+Телеграм бот для поиска интересных видео
 
-### Bot examples:
-- https://github.com/Forden/DiscussRemoverBot (https://t.me/DiscussRemoverBot)
-- https://github.com/Forden/qbittorrent-bot
+Как запустить:
+Нужно запустить файл bot.py
+
+Как пользоваться:
+В Telegram написать боту @agent_app_test_task_bot любое сообщение, по которому будет найден один видеоролик
+
+Ограничения:
+Youtube API имеет ограничения по количеству запросов за день. Если код перестанет работать, выдавая ошибку 403 по запросам, то лимит на сегодня исчерпан
+
+Виртуальная среда:
+venv
+Лежит в корне проекта
+
+Не работает функция лайка:
+Нужно добавить свою почту в список бета-тестеров
